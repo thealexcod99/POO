@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TestRectangulo {
+public class TestRectanguloConMetodos {
 
 	public static void main( String[] args ) {
 	
@@ -22,7 +22,13 @@ public class TestRectangulo {
 		r2.setAltura(sc.nextInt());
 		System.out.println(" ");
 		
-		System.out.printf( "El rectángulo de base %d y de altura %d tiene de perímetro %d y de área %d%n%n", r1.getBase(), r1.getAltura(), r1.getPerimetro(), r1.getArea());
-		System.out.printf( "El rectángulo de base %d y de altura %d tiene de perímetro %d y de área %d%n", r2.getBase(), r2.getAltura(), r2.getPerimetro(), r2.getArea());
+		imprimirRectangulos(r1);
+		imprimirRectangulos(r2);
+	}	
+	
+	public static void imprimirRectangulos( Rectangulo r ) {	
+		
+		System.out.printf( "El rectángulo de base %d y de altura %d tiene de perímetro %d y de área %d%n%n", r.getBase(), r.getAltura(), r.getPerimetro(), r.getArea());
+		
 	}
 }
