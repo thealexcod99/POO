@@ -12,10 +12,7 @@ public class TestCirculo {
 		double radio = sc.nextDouble();
 		
 		c.setRadio(radio);
-		
-		double perimetro = c.getPerimetro();
-		double area = c.getArea();
-		
-		System.out.printf( "%n El círculo de radio %f tiene de perímetro %.2f y de área %.2f%n", c.getRadio(), perimetro, area );
+				
+		System.out.printf( "%n El círculo de radio %f tiene de perímetro %.2f y de área %.2f%n", c.getRadio(), c.getPerimetro(), c.getArea() );
 	}
 }
